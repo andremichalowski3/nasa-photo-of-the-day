@@ -3,9 +3,11 @@ import React from 'react';
 function CardEarth({ earthPhotoData }) {
   return (
     <div>
-      <h2>{earthPhotoData.id}</h2>
-      <h2>{earthPhotoData.name}</h2>      
-      <h2>{earthPhotoData.estimated_diameter.feet.estimated_diameter_min}</h2>
+      <img src={earthPhotoData.hdurl} alt='nasa space'/>
+      <h1>{earthPhotoData.title}</h1>
+      <h3>Photo by: {earthPhotoData.copyright}</h3>
+      <h3>{earthPhotoData.date}</h3>
+      <p>{earthPhotoData.explanation}</p>
     </div>
   );
 }

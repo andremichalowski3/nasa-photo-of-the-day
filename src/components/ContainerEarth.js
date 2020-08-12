@@ -8,7 +8,7 @@ function ContainerEarth() {
 
     useEffect(() => {
         axios
-            .get('https://api.nasa.gov/neo/rest/v1/neo/3542519?api_key=ofRu3cf039X3Fbyz8FXamYIcJVHI83w9IkwoPXxB')
+            .get('https://api.nasa.gov/planetary/apod?api_key=51aeSquTD287pPb4wRI3lrSZmK3uW50H4gDCxEeg')
             .then(response => {
                 console.log(response)
                 const earthPhotos = response.data;
