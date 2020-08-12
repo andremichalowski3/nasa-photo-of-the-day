@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 import CardEarth from './CardEarth';
+// import styled from 'styled-components';
+
+// import SomeComponent from './StyledComponents'
 
 function ContainerEarth() {
     const [earthPhotoData, setEarthPhotoData] = useState([]);
@@ -20,10 +23,14 @@ function ContainerEarth() {
             );
     }, []);
 
+    
+
     return (
         <div>
             <h1>NASA PHOTO OF THE DAY</h1>
             <CardEarth earthPhotoData={earthPhotoData} />
+            {/* <SomeComponent /> */}
+            
 
         </div>
     )
