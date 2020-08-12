@@ -1,33 +1,41 @@
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: grey;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 0 10px 0 10px;
+  font-family: 'Space Mono', monospace;
+  color: black;
+  letter-spacing: 0.2rem;
+  text-shadow: 1px 1px 2px black;
+}
+
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0 50px 5px 50px;
+  font-family: 'Space Mono', monospace;
+}
+
+img {
+  margin-left: 5%;
+  border-radius: 3%;
+  box-shadow: 5px 5px 10px black;
+  max-width: 90%;
+  max-height: 40%;
+}
+
+.nasaList {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+  margin-left: 25%;
+} 
